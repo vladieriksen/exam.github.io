@@ -1,0 +1,231 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100);
+
+body {
+  background: white;
+  margin: 0;
+  padding: 0;
+}
+
+.\#title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.\#title,
+.\#subtitle {
+  font-family: Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.\#subtitle {
+  display: block;
+  letter-spacing: 1px;
+  font-size: 0.9em;
+}
+
+.\#iphone {
+  width: 365px;
+  height: 790px;
+  margin: 20px auto;
+  background: url(http://designbump.com/wp-content/uploads/2013/10/Flat-iPhone-Mock-Up-Display.jpg)
+    no-repeat -650px -290px;
+  border-radius: 60px;
+}
+
+.\#iphone-screen {
+  background-color: #fff;
+  width: 312px;
+  height: 555px;
+  position: relative;
+  top: 115px;
+  left: 24px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+#start {
+  background-color: #cf2a27;
+  border: none;
+  position: absolute;
+  border-radius: 100%;
+  width: 6em;
+  height: 6em;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -3em;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+}
+
+@-webkit-keyframes onStart {
+  20% {
+    margin: 0;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 0;
+    margin-left: 0;
+  }
+  60% {
+    margin: 0;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 0;
+    margin-left: 0;
+    height: 15%;
+  }
+  100% {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 0;
+    margin-left: 0;
+  }
+}
+
+@-webkit-keyframes onStop {
+  0% {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 0;
+    margin-left: 0;
+  }
+  40% {
+    margin: 0;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 0;
+    margin-left: 0;
+    height: 15%;
+  }
+  80% {
+    margin: 0;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 0;
+    margin-left: 0;
+  }
+  100% {
+    border-radius: 100%;
+    width: 6em;
+    height: 6em;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -3em;
+  }
+}
+
+#start.started {
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-name: onStart;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#start.stopped {
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-name: onStop;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.animate {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.\#button-info-container,
+.\#text-below {
+  font-size: 14px;
+  padding: 2em;
+  box-sizing: border-box;
+  text-align: left;
+  font-family: "Raleway", sans-serif !important;
+}
+
+.\#text-below h1 {
+  font-size: 17px;
+  margin-top: -0.5em;
+}
+
+.\#text-below h1 img {
+  width: 15px;
+  height: 15px;
+  display: block;
+  margin: 0px;
+  margin-top: 2px;
+  float: left;
+}
+
+.\#text-below h2 img {
+  width: 25px;
+  height: 25px;
+  float: left;
+  margin-right: 20px;
+}
+
+.\#text-below h2 {
+  margin-top: 20px;
+}
+
+.\#text-below h3 {
+  padding-top: 0.5em;
+  letter-spacing: 0.5px;
+  line-height: 3.5;
+}
+
+.\#text-below p {
+  margin: 1em;
+}
+
+.\#button-info-container {
+  display: none;
+  position: absolute;
+  font-family: "Times New Roman", Georgia;
+  text-transform: none;
+  top: 310px;
+  left: 50;
+  width: 312px;
+  height: 555px;
+  top: 0;
+  left: 0;
+}
+
+.\#button-info-container h2 {
+  text-align: center;
+}
+
+.\#button-info-container h3 {
+  text-align: center;
+  letter-spacing: 0.5px;
+  line-height: 2em;
+  margin-top: 2.5em;
+}
+
+.\#button-info-container h4 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align-last: center;
+}
+
+.\#button-info-container h2 img {
+  float: left;
+  width: 15px;
+  height: 15px;
+  padding-top: 6px;
+}
